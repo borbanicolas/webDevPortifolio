@@ -15,7 +15,7 @@
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
 }
 html{
     font-size: 62.5%;
@@ -100,12 +100,20 @@ html{
        border: var(--border);
        border-radius: .5rem;
        width: 30rem;
+       transition: scale(0);
+       transform-origin: top right;
+       opacity: 0;
    }
+   .header .navbar.active{
+    transition: scale(1);
+    opacity: 1;
+   }
+
    .header .navbar a {
        font-size: 2rem;
        display: block;
-       padding: 1.5rem;
-       margin: .5rem 1rem;
+       padding: 1rem;
+       margin: 1rem;
        border-radius: .5rem; 
    }
    header .navbar a:hover{
