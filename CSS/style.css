@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+:root{
+    --main-color: #e8786e;
+    --black:#555;
+    --light-color:#777;
+    --bg:#fceae9;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.1);
+
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 9rem;
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background:#fff ;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: .5rem;
+    color: var(--main-color);
+    background: var(--bg);
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #fff;
+    background: var(--bg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+
+@media( max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+
+    }
+}
+
+@media( max-width:768px){
+   #menu-btn{
+       display: initial;
+   }
+   .header .navbar{
+       position: absolute;
+       top: 115%; right: 2rem;
+       background: #fff;
+       box-shadow: var(--box-shadow);
+       border: var(--border);
+       border-radius: .5rem;
+       width: 30rem;
+   }
+   .header .navbar a {
+       font-size: 2rem;
+       display: block;
+       padding: 1.5rem;
+       margin: .5rem 1rem;
+       border-radius: .5rem; 
+   }
+   header .navbar a:hover{
+       background-color: var(--bg);
+   }
+    
+}
+
+@media( max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    
+    
+}
