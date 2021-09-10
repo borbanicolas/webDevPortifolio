@@ -103,7 +103,7 @@ section{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:10rem 10rem;
+    gap:1.5rem;
     padding-top: 10rem;
     background: var(--bg);
     position: relative;
@@ -139,15 +139,16 @@ section{
     height: 18rem;
     background-size: 250rem 18rem;
     background: url(../images/cloud.png) repeat-x; 
-    animation: cloud 30s linear infinite;
+    animation: cloud 10s linear infinite;
+    
 }
 
 @keyframes cloud {
     0%{ 
-        background-position: 0rem;
+        background-position-x: 0rem;
     }
     100%{
-        background-position: -250rem;
+        background-position-x: -250rem;
     }
 }
 
