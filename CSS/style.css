@@ -26,7 +26,18 @@ html{
 section{
     padding: 2rem 9%;
 }
-
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    color: var(--black);
+}
+.heading span{
+    color: var(--main-color);
+    border-radius: .5rem;
+    background: var(--bg);
+    padding: 0 1.5rem;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -127,6 +138,7 @@ section{
 
 
 .home .content p{
+    margin-top: 5px;
     font-size: 1.7rem;
     color: var(--light-color);
     line-height: 1.8rem;
@@ -139,7 +151,7 @@ section{
     height: 18rem;
     background-size: 250rem 18rem;
     background: url(../images/cloud.png) repeat-x; 
-    animation: cloud 10s linear infinite;
+    animation: cloud 30s linear infinite;
     
 }
 
@@ -153,15 +165,43 @@ section{
 }
 
 .home .cloud-1{
-    opacity: .5;
+    opacity: .6;
     height: 20rem;
     background-size: 250rem 20rem;
     animation-direction: reverse;
     animation-duration: 15s;
 }
 
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 1.5rem;
 
+}
 
+.services .box-container .box{
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 4rem 2rem;
+}
+
+.services .box-container .img{
+    height: 10rem;
+}
+.services .box-container h3{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+}
+.services .box-container p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 1rem ;
+    line-height: 1.8;
+
+}
 
 
 
@@ -222,6 +262,9 @@ section{
    }
    header .navbar a:hover{
        background-color: var(--bg);
+   }
+   .home .content{
+       text-align: center;
    }
     
 }
