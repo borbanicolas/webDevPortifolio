@@ -203,8 +203,24 @@ section{
 
 }
 
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: ;
+    gap: 1.5rem;
+}
 
+.about .row .image{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .image img{
+    width: 100%;
+}
 
+.about .row .content{
+    flex: 1 1 45rem;
+}
 
 
 
