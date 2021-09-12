@@ -264,6 +264,81 @@ section{
     padding-top: 1rem;
 }
 
+.portifolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 1.5rem;
+}
+
+
+
+
+.portifolio .box-container .box{
+    height: 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.portifolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portifolio .box-container .box span{
+    position: absolute;
+    top: 1rem; right: 2rem;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: var(--black);
+}
+.portifolio .box-container .box .content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 6rem; left: 0;
+    transition-delay: .3s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.portifolio .box-container .box:hover .content{
+    top: 0;
+    opacity: 1;
+}
+.portifolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    color: var(--black);
+}
+.portifolio .box-container .box .content p{
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    color: var(--light-color);
+}
+.portifolio .box-container .box::before{
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    background: #fff;
+    clip-path: circle(30% at 93% 0);
+    transition: .3s linear;
+}
+.portifolio .box-container .box:hover::before{
+    clip-path: circle(100%);
+}
+
+
+
+
+
+
 
 
 
