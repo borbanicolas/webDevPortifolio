@@ -356,7 +356,26 @@ section{
     margin: 2.5rem 0;
     height: 15rem;
 }
+.pricing .box-container .box .price{
+    font-size: 4rem;
+   font-weight: bolder;
+   color: var(--main-color);
+}
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+   font-weight: lighter;
+   color: var(--main-color);
+}
+.pricing .box-container .box ul{
+    padding: 1rem 0;
+    list-style: none;
 
+}
+.pricing .box-container .box ul li {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
 
 
 
