@@ -398,9 +398,10 @@ section{
     width: 7rem;
     border-radius: 50%;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 .review .box-container .box  .user h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
     padding-bottom: .5rem;
 }
@@ -408,8 +409,6 @@ section{
     font-size: 1.5rem;
     color: var(--main-color);
 }
-
-
 
 .review .box-container .box  .user .fa-quote-right{
     margin-left: auto;
@@ -424,6 +423,51 @@ section{
     color: var(--light-color);
     font-style: italic;
 }
+
+
+.contact .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+
+
+.contact .icons-container .icons{
+    padding: 2.5rem;
+    text-align: center;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.contact .icons-container .icons i{
+    height: 6rem;
+    width:6rem ;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    background: var(--bg);
+    border-radius: 50%;
+}
+
+
+.contact .icons-container .icons h3{
+    color: var(--black);
+    padding: 1rem 0;
+    font-style: 2.5rem;
+}
+
+
+.contact .icons-container .icons p{
+    color: var(--light-color);
+    line-height: 1.5;
+    font-style: 2.5rem;
+}
+
 
 
 
