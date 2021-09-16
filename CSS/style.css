@@ -427,7 +427,6 @@ section{
 
 .contact .icons-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -468,8 +467,31 @@ section{
     font-style: 2.5rem;
 }
 
+.contact .row{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
 
+    }
 
+.contact .row .map{
+        flex: 1 1 45rem;
+        width: 100%;
+        padding: 2rem;
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+}
+.contact .row form{
+        flex: 1 1 45rem;
+        padding: 2rem;
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        
+}
 
 
 
